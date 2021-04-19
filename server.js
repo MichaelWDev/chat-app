@@ -3,6 +3,7 @@ const app     = express();
 const server  = require("http").Server(app);
 const port    = 3000;
 const io      = require('socket.io')(server);
+const fs      = require('fs');
 
 // Serve the static website files.
 app.use(express.static("public"));
@@ -11,6 +12,7 @@ app.use(express.static("public"));
 server.listen(port, function () {
     console.log("Server is running on "+ port +" port");
 });
+
 
 // Server
 const users = {};
@@ -25,6 +27,11 @@ io.on('connection', function(socket){
 
     socket.on('send-chat-message', message => {
         socket.broadcast.emit('chat-message', { message: message, name: users[socket.id] });
+
+        fs.appendFile('message.txt', users[socket.id] + ": "+ message + "\n", function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+        });
     });
     
     socket.on('disconnect', function(){

@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#message-container {
+    position:       absolute;
+    width:          50%;
+    height:         65%;
+    top:            15%;
+    left:           50%;
+    transform:      translateX(-50%);
+    overflow-y:     scroll;
+    overflow-x:     hidden;
+    display:        flex;
+    flex-direction: column-reverse;
+    pointer-events: auto;
+}
+
+#send-container {
+    position: absolute; 
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+#send-button {
+    background: 0;
+    color: green;
+}
+
+#message-input {
+    background: 0;
+    color: white;
+    border: 2px solid green;
+    font
+}
