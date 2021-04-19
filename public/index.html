@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
     
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <div id="message-container">
+        <form id="send-container">
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
 </body>
 </html>
