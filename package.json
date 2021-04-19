@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A chatroom.",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakeItMike/chat-app.git"
+  },
+  "author": "Michael Woodyard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MakeItMike/chat-app/issues"
+  },
+  "homepage": "https://github.com/MakeItMike/chat-app#readme"
+}
