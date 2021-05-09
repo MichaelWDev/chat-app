@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+.hide {
+    display: none;
+}
+
 #message-container {
     position:       absolute;
     width:          50%;
