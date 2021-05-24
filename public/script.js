@@ -37,6 +37,7 @@ function appendMessage(message, profile) {
     messageContainer.insertBefore(profilePicture, messageElement, messageContainer.firstChild);
 }
 
+/*
 // Fix this. It breaks everything.
 window.addEventListener('load', function() {
     document.querySelector('input[type="file"]').addEventListener('change', function() {
@@ -50,3 +51,4 @@ window.addEventListener('load', function() {
         }
     });
 });
+*/
